@@ -1,8 +1,18 @@
+
+body, html {
+    margin: 0; /* Sæt margin til 0 på body og html */
+    padding: 0; /* Sæt padding til 0 på body og html */
+    width: 100%; /* Sikrer, at bredden er sat til 100% */
+    height: 100%; /* Sikrer, at højden er sat til 100% */
+}
+
 *{
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
-    font-family: playfair display;
+    font-family: "playfair display";
+}
+
+.wrapper{
+    flex: 1;
 }
 
 .image-logo{
@@ -24,7 +34,7 @@ nav ul li{
 nav ul li a{
 text-decoration: none;
 color: #00224B;
-font-size: 16px;
+font-size: 18px;
 padding: 12px;
 }
 
@@ -49,7 +59,7 @@ section{
 
 .main-text h1{
     color: #00224B;
-    font-size: 50px;
+    font-size: 48px;
     text-transform: capitalize;
 }
 
@@ -63,4 +73,222 @@ section{
 .main-text p{
     color: #00224B;
     font-size: 20px;
+}
+
+.centertext h2{
+    color: #00224B;
+    font-size: 28px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.categories{
+    margin: 70px;
+}
+
+.textprojekter{
+    color: #00224B;
+    font-size: 31px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+/* Styling for billedrækken */
+.image-grid {
+    padding: 1px;
+}
+
+/* Styling for hver række */
+.row {
+    display: flex;
+    justify-content: center; /* Centrerer billederne i rækken */
+    gap: 1px; /* Giver mellemrum mellem elementerne */
+    margin-bottom: 70px; /* Mellemrum mellem hver række */
+}
+
+/* Styling for hver billedecontainer */
+.image-container {
+    flex: 1; /* Sørger for, at hver container fylder lige meget plads */
+    max-width: 33.33%; /* Begrænser containerne til en tredjedel af rækken */
+}
+
+/* Styling for billederne */
+.image-container img {
+    width: 100%; /* Billedet fylder hele containeren */
+    height: 300px; /* Juster højden til den ønskede faste størrelse */
+    object-fit:contain /* Beskær billedet, hvis nødvendigt, for at bevare proportionerne */
+}
+
+.caption-box {
+    width: 50%; /* Angiver bredden af boksen, juster procenten efter behov */
+    margin: 10px auto 0; /* Centrerer boksen og giver margin-top */
+    text-align: center; /* Centrerer tekst i boksen */
+    background-color: #00224B; /* Juster baggrundsfarve efter behov */
+    color: white;
+    padding: 10px; /* Juster padding for indre plads */
+    font-size: 18px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Tilføjer en skygge til boksen */
+}
+
+
+
+
+/* Styling af Om mig  */
+.full-width-section {
+    width: 100%; /* Sætter sektionen til at fylde hele bredden */
+    background-color: #EBDED4; /* Angiver baggrundsfarve, juster efter behov */
+    color: #00224B;
+    display: flex; /* Brug flexbox til at arrangere tekst og billede side om side */
+    justify-content: space-between; /* Justerer elementerne med plads mellem dem */
+    padding: 100px; /* Indre plads, juster efter behov */
+    box-sizing: border-box; /* Medregn padding og border i sektionens bredde */
+}
+
+/* Styling for tekstsektionen */
+
+
+.text-section {
+    flex: 1; /* Fylder halvdelen af sektionen */
+    padding: 20px; /* Justerer padding for tekstsektionen */
+    font-size: 18px
+    margin: 0px 0 10px;
+}
+
+/* Styling for billedsektionen */
+.image-section {
+    flex: 1; /* Fylder halvdelen af sektionen */
+    padding: 16px; /* Justerer padding for billedsektionen */
+    display: flex; /* Brug flexbox til at centrere billedet inden for sektionen */
+    justify-content: center; /* Centrerer billedet vandret */
+    align-items: center; /* Centrerer billedet lodret */
+}
+
+/* Styling for billedet */
+.image-section img {
+    max-width: 100%; /* Begrænser billedets bredde til 100% af containeren */
+    height: auto;
+}
+
+
+
+
+
+
+
+
+/* section3 - KONTAKT styling*/
+#overskrift{
+    padding-top: 0px;
+    margin-top: 0px;
+    text-align: left;
+}
+
+.kontakt img{
+    width: 30px;
+    height: 30px;
+    padding: 10px 20px;
+}
+
+.kontakt{
+    display: flex;
+    font-family: Avenir Next Condensed;
+    font-size: 16px;
+    color: #4b4b4b;
+    justify-content: center;
+}
+
+.forside-kontakt-grÃ¸n-box {
+    width: 30%;
+    height: 300px;
+    margin: 0px 0px 180px 0px;
+    opacity: 50%;
+    position: relative;
+    left: 5%;
+}
+
+.kontaktinfo{
+    float: right;
+    margin-right: 5%;
+}
+
+.forside-kontakt-billede{
+    width: 200px;
+    position: absolute;
+    margin: 80px;
+    right: 15%;
+}
+
+.knap-kontakt{
+    background-color:#a0a38e;
+    width: 120px;
+    text-decoration: none;
+    font-family: Avenir Next Condensed;
+    color: #4b4b4b;
+    padding: 10px 20px;
+    margin-top: 10px;
+    float: right;
+    transition: 0.3s;
+}
+
+.knap-kontakt:hover
+    {color:#e5e5e5;}
+
+.knap-kontakt:active
+    {background-color:#7e8265;}
+
+
+
+
+
+
+
+
+    
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px; /* Adjust the padding as needed */
+    background-color: #EBDED4; /* Slightly lighter than the body background */
+    border: 1px #ffffff; 
+    border-style: solid none none;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+}
+
+.contact-box {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Adjusted margin to bring icons closer */
+}
+
+.contact-box img {
+    margin-right: 10px;
+    width: 40px; /* Adjust the size as needed */
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+}
+
+.social-media span {
+    margin-right: 10px;
+}
+
+.social-media a {
+    display: inline-block;
+}
+
+.social-media img {
+    width: 40px; /* Smaller icons for social media */
+    margin: 3px;
+}
+
+.footer span {
+    color: #333; /* Dark gray text */
 }
