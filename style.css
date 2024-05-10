@@ -52,19 +52,18 @@ nav ul li a:hover{
     align-items: center;
 }
 
-section{
-    padding: 10%;
 
-}
 
 .main-text h1{
     color: #00224B;
+	 padding: 10px;
     font-size: 48px;
     text-transform: capitalize;
 }
 
 .main-text h3{
     color: #00224B;
+	 padding: 10px;
     font-size: 25px;
     text-transform: capitalize;
     margin: 0px 0 10px;
@@ -72,6 +71,7 @@ section{
 
 .main-text p{
     color: #00224B;
+	padding: 10px;
     font-size: 20px;
 }
 
@@ -90,13 +90,15 @@ section{
     color: #00224B;
     font-size: 31px;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 70px;
     margin-bottom: 10px;
 }
 
 /* Styling for billedrækken */
 .image-grid {
-    padding: 1px;
+    padding: 10%;
+	/*padding: 1px;*/
+	
 }
 
 /* Styling for hver række */
