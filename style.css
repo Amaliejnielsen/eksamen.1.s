@@ -16,7 +16,7 @@ body, html {
 }
 
 .image-logo{
-    width: 140px;
+    width: 150px;
 }
 
 header{
@@ -44,7 +44,7 @@ nav ul li a:hover{
 
 .main-home{
     width: 100%;
-    height: 500px;
+    height: 630px;
     background-image: url(image/forsidebillede.jpg);
     background-position: center;
     background-size: cover;
@@ -52,34 +52,30 @@ nav ul li a:hover{
     align-items: center;
 }
 
-
+.main-text {
+    position: relative;
+    top: 150px;  /* Skubber hele .main-text blokken 50px nedad */
+}
 
 .main-text h1{
     color: #00224B;
-	 padding: 10px;
+	padding: 1px 120px;
     font-size: 48px;
-    text-transform: capitalize;
+    margin-bottom: 0;
 }
 
-.main-text h3{
+.main-text h3{ 
     color: #00224B;
-	 padding: 10px;
+	padding: 1px 120px;
     font-size: 25px;
-    text-transform: capitalize;
-    margin: 0px 0 10px;
+    margin: 0;
 }
 
 .main-text p{
     color: #00224B;
-	padding: 10px;
+	padding: 20px 120px;
     font-size: 20px;
-}
-
-.centertext h2{
-    color: #00224B;
-    font-size: 28px;
-    text-transform: capitalize;
-    text-align: center;
+    margin: 0;
 }
 
 .categories{
@@ -88,10 +84,10 @@ nav ul li a:hover{
 
 .textprojekter{
     color: #00224B;
-    font-size: 31px;
+    font-size: 30px;
     text-align: center;
-    margin-top: 70px;
-    margin-bottom: 10px;
+    margin-top: 320px;
+    margin-bottom: 80px;
 }
 
 /* Styling for billedrækken */
@@ -105,7 +101,7 @@ nav ul li a:hover{
 .row {
     display: flex;
     justify-content: center; /* Centrerer billederne i rækken */
-    gap: 1px; /* Giver mellemrum mellem elementerne */
+    gap: 0px; /* Giver mellemrum mellem elementerne */
     margin-bottom: 70px; /* Mellemrum mellem hver række */
 }
 
@@ -136,31 +132,51 @@ nav ul li a:hover{
 
 
 
+
 /* Styling af Om mig  */
 .full-width-section {
     width: 100%; /* Sætter sektionen til at fylde hele bredden */
     background-color: #EBDED4; /* Angiver baggrundsfarve, juster efter behov */
     color: #00224B;
     display: flex; /* Brug flexbox til at arrangere tekst og billede side om side */
-    justify-content: space-between; /* Justerer elementerne med plads mellem dem */
+    justify-content: center; /* Justerer elementerne med plads mellem dem */
     padding: 100px; /* Indre plads, juster efter behov */
     box-sizing: border-box; /* Medregn padding og border i sektionens bredde */
+    height: 550px;
+    margin-top: -100px;
 }
 
 /* Styling for tekstsektionen */
 
-
 .text-section {
-    flex: 1; /* Fylder halvdelen af sektionen */
+    flex: 0.8; /* Fylder halvdelen af sektionen */
     padding: 20px; /* Justerer padding for tekstsektionen */
-    font-size: 18px
-    margin: 0px 0 10px;
+    display: flex; /* Gør tekstsektionen til en flex container */
+    flex-direction: column; /* Stabler indholdet vertikalt */
+    justify-content: center; /* Centrerer indholdet vertikalt inden for sektionen */
+    text-align: left; /* Sikrer at teksten er venstrestillet */
+    
 }
+
+.text-section h2{
+    color: #00224B;
+    font-size: 40px;
+    margin-top: 0; /* Reducerer top-margin */
+    margin-bottom: 30px; /* Mindre afstand mellem h2 og efterfølgende paragraf */
+}
+
+.text-section p{
+    color: #00224B;
+    font-size: 18px;
+    margin-top: 0; /* Reducerer top-margin for at eliminere ekstra plads */
+    margin-bottom: 20px; /* Konsistent lille afstand til næste paragraf hvis flere p tags */
+}
+
 
 /* Styling for billedsektionen */
 .image-section {
     flex: 1; /* Fylder halvdelen af sektionen */
-    padding: 16px; /* Justerer padding for billedsektionen */
+    padding: 10px; /* Justerer padding for billedsektionen */
     display: flex; /* Brug flexbox til at centrere billedet inden for sektionen */
     justify-content: center; /* Centrerer billedet vandret */
     align-items: center; /* Centrerer billedet lodret */
@@ -168,7 +184,7 @@ nav ul li a:hover{
 
 /* Styling for billedet */
 .image-section img {
-    max-width: 100%; /* Begrænser billedets bredde til 100% af containeren */
+    max-width: 80%; /* Begrænser billedets bredde til 100% af containeren */
     height: auto;
 }
 
