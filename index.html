@@ -10,14 +10,14 @@
     <body>
     <div class="wrappper"></div>
 
-    <header>
+    <header> <!-- Logo -->
         <img class="image-logo" src="image//logo.png" alt="logo">
     </header>
 
     <header>
 
         <nav>
-            <ul class="navmenu">
+            <ul class="navmenu">  <!-- Navigation -->
                 <li><a href="#">Forside</a></li>
                 <li><a href="#">Projekter</a></li>
                 <li><a href="#">Om mig</a></li>
@@ -26,12 +26,19 @@
         </nav>
     </header>
     
-  <section class="main-home">
-     <div class="main-text">
-          <h1>Amalie Jessen</h1>
-          <h3>Multimediedesigner</h3>
-          <p> Præsentationsportfolio</p>
-    </div>
+
+    <section class="main-home">
+        <div class="intro-box">
+            <img src="image/forsidebillede.jpg" alt="Mig" id="mig-forside">
+            <img src="image/forsidebillede2.jpg" alt="Mig" id="mig-forside2">
+            <div class="intro">
+                <h1 class="titel">Amalie Jessen Nielsen</h1>
+                <h3 class="titel2">Multimediedesigner</h3>
+                <p class="titel3">Præsentationsportfolio </p>
+            </div>
+        </div>
+    </section>
+           
 
     <section class="image-grid">
         <div class="textprojekter">
@@ -82,23 +89,22 @@
     </section>
 
 
-    <section> <!-- KONTAKT MIG -->
-        <p class="underoverskrift">Kontakt mig</p>
-        <h3 class="overskrift" id="overskrift">Har jeg fanget din interesse, så kontakt mig her</h3>
-        <div class="kontaktinfo">
-            <div class="kontakt">
-                <img src="image/bruger.png" alt="">
-                <p>Amalie Jessen Nielsen</p>
-            </div>
-            <div class="kontakt">
-                <img src="image/mail.png" alt="mail">
-                <p>Amalie.dknielsen@gmail.com</p>
-            </div>
-            <div class="kontakt">
-                <img src="image/telefon.png" alt="telefon">
-                <p>45+ 21 45 05 53</p>
-            </div>
-        </section>
+    <div class="contact-section"> <!-- Kontakt -->
+        <h2>Kontakt mig</h2>
+        <h3>Har jeg fanget din interesse, så kontakt mig her:</p>
+        <div class="contact-item">
+            <img src="image/bruger.png" alt="Profil Icon">
+            <p>Amalie Jessen Nielsen</p>
+        </div>
+        <div class="contact-item">
+            <img src="image/mail.png" alt="Email Icon">
+            <p>Amalie.dknielsen@gmail.com</p>
+        </div>
+        <div class="contact-item">
+            <img src="image/telefon.png" alt="Phone Icon">
+            <p>+45 21 45 05 53</p>
+        </div>
+    </div>
 
 
     <footer class="footer">
@@ -117,6 +123,7 @@
             <a href="https://www.instagram.com/amaliejessen_/"><img src="image/instagram.png" alt="Instagram"></a>
             <a href="https://www.linkedin.com/in/amalie-jessen-nielsen-104566307/"><img src="image/linkein.png" alt="LinkedIn"></a>
         </div>
+
     </footer>
 
 
