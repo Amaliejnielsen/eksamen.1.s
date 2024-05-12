@@ -205,6 +205,7 @@ nav ul li a:hover {
     }
 }
 
+
 /* Responsiv styling for tablets og desktops */
 @media screen and (min-width: 600px) {
     .image-container {
