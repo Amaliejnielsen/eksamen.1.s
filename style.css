@@ -201,6 +201,7 @@ nav ul li a:hover {
 
     .image-container {
         width: 100%; /* Billederne fylder hele bredden på mobile enheder */
+        margin-bottom: 60px;
     }
 }
 
