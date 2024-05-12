@@ -1,41 +1,71 @@
 body, html {
-    margin: 0; /* Sæt margin til 0 på body og html */
-    padding: 0; /* Sæt padding til 0 på body og html */
-    width: 100%; /* Sikrer, at bredden er sat til 100% */
-    height: 100%; /* Sikrer, at højden er sat til 100% */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
     box-sizing: border-box;
     font-family: "playfair display";
 }
 
-.wrapper{
-    flex: 1;
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Fylder hele højden af viewport */
 }
 
-.image-logo{
+.image-logo {
     width: 150px;
 }
 
-header{
+header {
     background-color: #EBDED4;
     display: flex;
-    align-items:center;
-    justify-content: space-around;
+    flex-direction: column; /* Stabler logo og navigation vertikalt */
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Sørger for, at header fylder hele bredden */
+    text-align: center; /* Centrerer teksten */
 }
 
-nav ul li{
+nav ul {
+    padding: 0;
     list-style: none;
-    display: inline-block;
+    width: 100%; /* Giver fuld bredde til navigationslinjen */
+    display: flex;
+    flex-direction: column; /* Vertikal layout for links */
+    justify-content: center;
+    align-items: center;
 }
 
-nav ul li a{
-text-decoration: none;
-color: #00224B;
-font-size: 18px;
-padding: 12px;
+nav ul li {
+    padding: 10px 0; /* Vertikal padding for hvert link */
 }
 
-nav ul li a:hover{
+nav ul li a {
+    text-decoration: none;
+    color: #00224B;
+    font-size: 18px;
+    display: block; /* Gør links blokelementer for bedre klikområde */
+}
+
+nav ul li a:hover {
     color: #A5AAD8;
+}
+
+/* Tilpasninger for større skærme */
+@media screen and (min-width: 600px) {
+    header {
+        flex-direction: row; /* Horisontal layout for større skærme */
+    }
+
+    nav ul {
+        flex-direction: row; /* Gør navigationslinjen horisontal */
+    }
+
+    nav ul li {
+        padding: 0 10px; /* Justerer padding for et mere kompakt layout */
+    }
 }
 
 
