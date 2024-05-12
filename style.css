@@ -314,15 +314,15 @@ nav ul li a:hover {
     padding: 20px;
 }
 
-.contact-section h2{
+.contact-section h2 {
     color: #00224B;
-    font-size: 18px;
+    font-size: 30px;
 }
 
-.contact-section p{
+.contact-section p {
     color: #00224B;
-    font-size: 18px;
-
+    font-size: 19px;
+    padding-left: 50px; /* Øger venstre padding for at skubbe teksten mere til højre */
 }
 
 .contact-item {
@@ -330,12 +330,13 @@ nav ul li a:hover {
     align-items: center;
     justify-content: flex-start; /* Sikrer, at items starter fra samme punkt til venstre */
     margin: 10px 0;
+    padding-left: 140px; /* Tilføjer venstre padding for at skubbe hele elementet til højre */
 }
 
 .contact-item img {
-    width: 24px; /* Størrelse på ikonet */
-    height: 24px;
-    margin-right: 10px; /* Afstand mellem ikon og tekst */
+    width: 50px; /* Størrelse på ikonet */
+    height: 50px;
+    margin-right: 1px; /* Afstand mellem ikon og tekst */
     flex-shrink: 0; /* Forhindrer ikonet i at skrumpe */
 }
 
@@ -352,7 +353,9 @@ nav ul li a:hover {
 
 
 
-.footer {
+
+
+.footer { /* Footer styling */
     background-color: #EBDED4; /* Baggrundsfarven på din footer */
     padding: 5px 0;
     text-align: center; /* Centrerer alt indhold */
