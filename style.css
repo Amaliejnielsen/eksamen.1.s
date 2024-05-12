@@ -15,7 +15,7 @@ body, html {
 }
 
 .image-logo {
-    width: 150px;
+    width: 140px;
 }
 
 header {
@@ -165,7 +165,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     gap: 1%;
-    margin-bottom: 20px;
+    margin-bottom: 80px;
 }
 
 .image-container {
@@ -227,21 +227,20 @@ nav ul li a:hover {
 
 
 
-/* Styling af Om mig  */
+/* "Om mig" Styling */
 .full-width-section {
     width: 100%; /* Sætter sektionen til at fylde hele bredden */
     background-color: #EBDED4; /* Angiver baggrundsfarve, juster efter behov */
     color: #00224B;
     display: flex; /* Brug flexbox til at arrangere tekst og billede side om side */
     justify-content: center; /* Justerer elementerne med plads mellem dem */
-    padding: 100px; /* Indre plads, juster efter behov */
+    padding: 100px; /* Reduceret padding for desktop */
     box-sizing: border-box; /* Medregn padding og border i sektionens bredde */
-    height: 550px;
-    margin-top: -100px;
+    height: auto; /* Højden justeres til auto */
+    margin-top: 50px; /* Justeret top margin */
 }
 
 /* Styling for tekstsektionen */
-
 .text-section {
     flex: 0.8; /* Fylder halvdelen af sektionen */
     padding: 20px; /* Justerer padding for tekstsektionen */
@@ -249,23 +248,19 @@ nav ul li a:hover {
     flex-direction: column; /* Stabler indholdet vertikalt */
     justify-content: center; /* Centrerer indholdet vertikalt inden for sektionen */
     text-align: left; /* Sikrer at teksten er venstrestillet */
-    
 }
 
-.text-section h2{
-    color: #00224B;
-    font-size: 40px;
-    margin-top: 0; /* Reducerer top-margin */
+.text-section h2 {
+    font-size: 40px; /* Størrelse justeres ned på mindre skærme */
+    margin-top: 0;
     margin-bottom: 30px; /* Mindre afstand mellem h2 og efterfølgende paragraf */
 }
 
-.text-section p{
-    color: #00224B;
-    font-size: 18px;
-    margin-top: 0; /* Reducerer top-margin for at eliminere ekstra plads */
-    margin-bottom: 20px; /* Konsistent lille afstand til næste paragraf hvis flere p tags */
+.text-section p {
+    font-size: 18px; /* Størrelse justeres ned på mindre skærme */
+    margin-top: 0;
+    margin-bottom: 15px; /* Mindre afstand til næste paragraf hvis flere p tags */
 }
-
 
 /* Styling for billedsektionen */
 .image-section {
@@ -278,8 +273,33 @@ nav ul li a:hover {
 
 /* Styling for billedet */
 .image-section img {
-    max-width: 80%; /* Begrænser billedets bredde til 100% af containeren */
+    max-width: 80%; /* Begrænser billedets bredde til 80% af containeren */
     height: auto;
+}
+
+/* Responsiv styling for mobile enheder */
+@media (max-width: 600px) {
+    .full-width-section {
+        flex-direction: column; /* Skifter til lodret layout */
+        padding: 30px; /* Endnu mere reduceret padding for at spare plads */
+    }
+
+    .text-section,
+    .image-section {
+        flex: 1 100%; /* Sørger for, at begge sektioner fylder hele bredden */
+    }
+
+    .text-section h2 {
+        font-size: 30px; /* Reducerer skriftstørrelsen for at passe bedre på små skærme */
+    }
+
+    .text-section p {
+        font-size: 16px; /* Mindre skriftstørrelse for bedre læsbarhed på små enheder */
+    }
+
+    .image-section img {
+        max-width: 100%; /* Billedet skal kunne fylder hele bredden */
+    }
 }
 
 
@@ -330,52 +350,46 @@ nav ul li a:hover {
 
 
 
+
+.footer {
+    background-color: #EBDED4; /* Baggrundsfarven på din footer */
+    padding: 5px 0;
+    text-align: center; /* Centrerer alt indhold */
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column; /* Stabler elementerne vertikalt */
+    align-items: center; /* Centrerer elementerne horisontalt */
+    justify-content: center; /* Centrerer vertikalt i footer */
+}
+
+.footer-logo {
+    max-width: 120px; /* Tilpas bredde efter behov */
+    height: auto; /* Bevarer billedets proportioner */
+    margin-bottom: 10px; /* Giver plads mellem logo og sociale ikoner */
+}
+
+.social-media-icons a {
+    display: inline-block; /* Gør links inline for horisontal visning af ikoner */
+    margin: 0 1px; /* Giver lidt plads mellem ikoner */
+}
+
+.social-media-icons img {
+    width: 40px; /* Størrelsen på dine sociale medieikoner */
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    .footer {
+        padding: 10px 0;
+    }
+
+    .social-media-icons a {
+        margin: 0 1px; /* Mindre margin mellem ikoner på små skærme */
+    }
+}
+
+
+
     
-.footer { /* Footer */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 50px; /* Adjust the padding as needed */
-    background-color: #EBDED4; /* Slightly lighter than the body background */
-    border: 1px #ffffff; 
-    border-style: solid none none;
-}
-
-.contact-info {
-    display: flex;
-    align-items: center;
-}
-
-.contact-box {
-    display: flex;
-    align-items: center;
-    margin-right: 20px; /* Adjusted margin to bring icons closer */
-}
-
-.contact-box img {
-    margin-right: 10px;
-    width: 40px; /* Adjust the size as needed */
-}
-
-.social-media {
-    display: flex;
-    align-items: center;
-}
-
-.social-media span {
-    margin-right: 10px;
-}
-
-.social-media a {
-    display: inline-block;
-}
-
-.social-media img {
-    width: 40px; /* Smaller icons for social media */
-    margin: 3px;
-}
-
-.footer span {
-    color: #333; /* Dark gray text */
-}
-
