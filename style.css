@@ -113,7 +113,7 @@ nav ul li a:hover {
     }
 
     .titel2 {
-        font-size: 20px;
+        font-size: 25px;
     }
 
     .titel3 {
@@ -155,7 +155,6 @@ nav ul li a:hover {
 
 .textprojekter{
     color: #00224B;
-    font-size: 30px;
     text-align: center;
     margin-top: 5px;
     margin-bottom: 50px;
@@ -205,13 +204,9 @@ nav ul li a:hover {
     }
 }
 
-
-/* Responsiv styling for tablets og desktops */
-@media screen and (min-width: 600px) {
-    .image-container {
-        width: 32%; /* Tre billeder per række på brede skærme */
+    .textprojekter {
+    font-size: 25px; /* Reducerer skriftstørrelsen på mobile enheder */
     }
-}
 
 /* Ekstra styling for større desktops */
 @media screen and (min-width: 1000px) {
@@ -252,7 +247,7 @@ nav ul li a:hover {
 }
 
 .text-section h2 {
-    font-size: 40px; /* Størrelse justeres ned på mindre skærme */
+    font-size: 30px; /* Størrelse justeres ned på mindre skærme */
     margin-top: 0;
     margin-bottom: 30px; /* Mindre afstand mellem h2 og efterfølgende paragraf */
 }
@@ -306,8 +301,8 @@ nav ul li a:hover {
 
 
 
-
-.contact-section { /* Kontakt mig */
+/* "Kontakt mig" styling */
+.contact-section {
     text-align: center;
     max-width: 600px;
     margin: 0 auto;
@@ -336,7 +331,7 @@ nav ul li a:hover {
 .contact-item img {
     width: 50px; /* Størrelse på ikonet */
     height: 50px;
-    margin-right: 1px; /* Afstand mellem ikon og tekst */
+    margin-right: 10px; /* Afstand mellem ikon og tekst */
     flex-shrink: 0; /* Forhindrer ikonet i at skrumpe */
     padding-left: 40px;
 }
@@ -347,6 +342,38 @@ nav ul li a:hover {
     width: 100%; /* Fylder resten af pladsen i flex container */
     font-size: 18px;
 }
+
+/* Media Queries for mindre skærme som smartphones */
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 10px;
+    }
+
+    .contact-section h2 {
+        font-size: 24px; /* Mindre tekststørrelse */
+    }
+
+    .contact-section p {
+        font-size: 16px; /* Mindre tekststørrelse */
+        padding-left: 5px; /* Mindre padding */
+    }
+
+    .contact-item {
+        flex-direction: column; /* Elementerne stables vertikalt */
+        padding-left: 0; /* Fjerner venstre padding */
+        align-items: center; /* Centrerer items */
+    }
+
+    .contact-item img {
+        margin-bottom: 5px; /* Afstand mellem ikon og tekst */
+        padding-left: 0; /* Fjerner venstre padding */
+    }
+
+    .contact-item span {
+        text-align: center; /* Centrerer tekst */
+    }
+}
+
 
 
 
