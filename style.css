@@ -322,7 +322,7 @@ nav ul li a:hover {
 .contact-section p {
     color: #00224B;
     font-size: 19px;
-    padding-left: 50px; /* Øger venstre padding for at skubbe teksten mere til højre */
+    padding-left: 10px; /* Øger venstre padding for at skubbe teksten mere til højre */
 }
 
 .contact-item {
@@ -338,6 +338,7 @@ nav ul li a:hover {
     height: 50px;
     margin-right: 1px; /* Afstand mellem ikon og tekst */
     flex-shrink: 0; /* Forhindrer ikonet i at skrumpe */
+    padding-left: 40px;
 }
 
 .contact-item span {
