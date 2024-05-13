@@ -427,6 +427,37 @@ nav ul li a:hover {
 
 
 
+.page-header {
+    width: 100%;
+    text-align: center; /* Centrerer teksten */
+    padding: 20px 0; /* Tilføjer vertikal padding for afstand fra toppen og til første sektion */
+    margin-top: 20px;
+    margin-bottom: 20px; /* Ekstra afstand til den første sektion */
+    font-size: 25px;
+}
+
+.page-header h1 {
+    color: #00224B; /* Mørkegrå tekstfarve for god læsbarhed */
+    font-weight: bold; /* Eller 'bold', afhængigt af præference */
+    margin: 0; /* Fjerner standard margin */
+}
+
+@media (max-width: 600px) {
+    .page-header h1 {
+        font-size: 28px; /* Mindre skriftstørrelse på små skærme */
+    }
+
+    .page-header {
+        padding: 10px 0; /* Mindre padding på små skærme */
+    }
+}
+
+
+
+
+
+
+
 /* "PROJEKTER1" Styling */
 .projekter-section1 {
     width: 100%;
@@ -515,7 +546,7 @@ nav ul li a:hover {
 /* "PROJEKTER2" Styling */
 .projekter-section2 {
     width: 100%;
-    background-color: #ffffff;
+    background-color: #EBDED4;
     color: #00224B;
     display: flex;
     justify-content: center;
@@ -530,7 +561,7 @@ nav ul li a:hover {
 /* Styling for tekstsektionen */
 .textprojekt-section2 {
     flex: 0.3;
-    padding: 10px 0 10px 20px; /* Adjusted padding for text to be on the left */
+    padding: 10px 20px 10px 0px; /* Adjusted padding for text to be on the left */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -538,9 +569,23 @@ nav ul li a:hover {
     margin-left: 40px; /* Added left margin to separate text from the image */
 }
 
+.textprojekt-section2 h2 {
+    font-size: 35px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.textprojekt-section2 p {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
 /* Styling for billedsektionen */
 .imageprojekt-section2 {
-    flex: 0.5;
+    flex: 0.4;
     padding: 10px 5px;
     display: flex;
     justify-content: center;
@@ -623,7 +668,7 @@ nav ul li a:hover {
 
 /* Styling for billedsektionen */
 .imageprojekt-section3 {
-    flex: 0.5;
+    flex: 0.6;
     padding: 10px 5px;
     display: flex;
     justify-content: center;
@@ -669,7 +714,7 @@ nav ul li a:hover {
 /* "PROJEKTER4" Styling */
 .projekter-section4 {
     width: 100%;
-    background-color: #ffffff;
+    background-color: #EBDED4;
     color: #00224B;
     display: flex;
     justify-content: center;
@@ -684,7 +729,7 @@ nav ul li a:hover {
 /* Styling for tekstsektionen */
 .textprojekt-section4 {
     flex: 0.3;
-    padding: 10px 0 10px 20px; /* Adjusted padding for text to be on the left */
+    padding: 10px 20px 10px 0px; /* Adjusted padding for text to be on the left */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -692,9 +737,23 @@ nav ul li a:hover {
     margin-left: 40px; /* Added left margin to separate text from the image */
 }
 
+.textprojekt-section4 h2 {
+    font-size: 35px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.textprojekt-section4 p {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
 /* Styling for billedsektionen */
 .imageprojekt-section4 {
-    flex: 0.5;
+    flex: 0.4;
     padding: 10px 5px;
     display: flex;
     justify-content: center;
@@ -733,6 +792,7 @@ nav ul li a:hover {
         max-width: 100%;
     }
 }
+
 
 
 
@@ -805,7 +865,7 @@ nav ul li a:hover {
         padding: 10px 0;
     }
 
-    .textprojekt-sectio5 h2 {
+    .textprojekt-section5 h2 {
         font-size: 30px;
     }
 
@@ -821,7 +881,7 @@ nav ul li a:hover {
 /* "PROJEKTER6" Styling */
 .projekter-section6 {
     width: 100%;
-    background-color: #ffffff;
+    background-color: #EBDED4;
     color: #00224B;
     display: flex;
     justify-content: center;
@@ -836,7 +896,7 @@ nav ul li a:hover {
 /* Styling for tekstsektionen */
 .textprojekt-section6 {
     flex: 0.3;
-    padding: 10px 0 10px 20px; /* Adjusted padding for text to be on the left */
+    padding: 10px 20px 10px 0px; /* Adjusted padding for text to be on the left */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -844,9 +904,23 @@ nav ul li a:hover {
     margin-left: 40px; /* Added left margin to separate text from the image */
 }
 
+.textprojekt-section6 h2 {
+    font-size: 35px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.textprojekt-section6 p {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
 /* Styling for billedsektionen */
 .imageprojekt-section6 {
-    flex: 0.5;
+    flex: 0.4;
     padding: 10px 5px;
     display: flex;
     justify-content: center;
@@ -884,6 +958,12 @@ nav ul li a:hover {
     .imageprojekt-section6 img {
         max-width: 100%;
     }
-}
 
+}
+.footer { /* Footer styling */
+    background-color: #EBDED4; /* Baggrundsfarven på din footer */
+    padding: 5px 0;
+    text-align: center; /* Centrerer alt indhold */
+    border-top: 2px solid #ffffff; /* Tilføjer en tynd grå linje over footeren */
+}
 
