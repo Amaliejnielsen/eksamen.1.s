@@ -205,7 +205,7 @@ nav ul li a:hover {
 }
 
     .textprojekter {
-    font-size: 25px; /* Reducerer skriftstørrelsen på mobile enheder */
+    font-size: 30px; /* Reducerer skriftstørrelsen på mobile enheder */
     }
 
 /* Ekstra styling for større desktops */
@@ -247,7 +247,7 @@ nav ul li a:hover {
 }
 
 .text-section h2 {
-    font-size: 30px; /* Størrelse justeres ned på mindre skærme */
+    font-size: 35px; /* Størrelse justeres ned på mindre skærme */
     margin-top: 0;
     margin-bottom: 30px; /* Mindre afstand mellem h2 og efterfølgende paragraf */
 }
@@ -255,7 +255,7 @@ nav ul li a:hover {
 .text-section p {
     font-size: 18px; /* Størrelse justeres ned på mindre skærme */
     margin-top: 0;
-    margin-bottom: 15px; /* Mindre afstand til næste paragraf hvis flere p tags */
+    margin-bottom: 30px; /* afstand imellem teksterne*/
 }
 
 /* Styling for billedsektionen */
@@ -300,7 +300,6 @@ nav ul li a:hover {
 
 
 
-
 /* "Kontakt mig" styling */
 .contact-section {
     text-align: center;
@@ -311,7 +310,7 @@ nav ul li a:hover {
 
 .contact-section h2 {
     color: #00224B;
-    font-size: 30px;
+    font-size: 35px;
 }
 
 .contact-section p {
@@ -424,4 +423,467 @@ nav ul li a:hover {
 
 
 
-    
+
+
+
+
+/* "PROJEKTER1" Styling */
+.projekter-section1 {
+    width: 100%;
+    background-color: #ffffff;
+    color: #00224B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    height: auto;
+    margin-top: 50px;
+    flex-direction: row-reverse;
+}
+
+/* Styling for tekstsektionen */
+.textprojekt-section1 {
+    flex: 0.3;
+    padding: 10px 20px 10px 0; /* Øger padding til højre for at skubbe teksten yderligere til venstre */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 40px; /* Øger højre margin for at skubbe teksten væk fra billedet */
+}
+
+.textprojekt-section1 h2 {
+    font-size: 35px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.textprojekt-section1 p {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Styling for billedsektionen */
+.imageprojekt-section1 {
+    flex: 0.5;
+    padding: 10px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for billedet */
+.imageprojekt-section1 img {
+    max-width: 70%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Responsiv styling for mobile enheder */
+@media (max-width: 600px) {
+    .projekter-section1 {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .textprojekt-section1,
+    .imageprojekt-section1 {
+        flex: 1 100%;
+        padding: 10px 0;
+    }
+
+    .textprojekt-sectio1 h2 {
+        font-size: 30px;
+    }
+
+    .textprojekt-section1 p {
+        font-size: 16px;
+    }
+
+    .imageprojekt-section1 img {
+        max-width: 100%;
+    }
+}
+
+
+
+
+/* "PROJEKTER2" Styling */
+.projekter-section2 {
+    width: 100%;
+    background-color: #ffffff;
+    color: #00224B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    height: auto;
+    margin-top: 50px;
+    flex-direction: row; /* Changed from row-reverse to row */
+}
+
+/* Styling for tekstsektionen */
+.textprojekt-section2 {
+    flex: 0.3;
+    padding: 10px 0 10px 20px; /* Adjusted padding for text to be on the left */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 0; /* Removed right margin as it is no longer necessary */
+    margin-left: 40px; /* Added left margin to separate text from the image */
+}
+
+/* Styling for billedsektionen */
+.imageprojekt-section2 {
+    flex: 0.5;
+    padding: 10px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for billedet */
+.imageprojekt-section2 img {
+    max-width: 70%;
+    height: auto;
+    margin-left: auto; /* Keeps the image centered within its container */
+    margin-right: auto;
+}
+
+/* Responsiv styling for mobile enheder */
+@media (max-width: 600px) {
+    .projekter-section2 {
+        flex-direction: column; /* Keeps the mobile layout unchanged */
+    }
+
+    .textprojekt-section2,
+    .imageprojekt-section2 {
+        flex: 1 100%;
+        padding: 10px 0;
+    }
+
+    .textprojekt-section2 h2 {
+        font-size: 30px;
+    }
+
+    .textprojekt-section2 p {
+        font-size: 16px;
+    }
+
+    .imageprojekt-section2 img {
+        max-width: 100%;
+    }
+}
+
+
+
+/* "PROJEKTER3" Styling */
+.projekter-section3 {
+    width: 100%;
+    background-color: #ffffff;
+    color: #00224B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    height: auto;
+    margin-top: 50px;
+    flex-direction: row-reverse;
+}
+
+/* Styling for tekstsektionen */
+.textprojekt-section3 {
+    flex: 0.3;
+    padding: 10px 20px 10px 0; /* Øger padding til højre for at skubbe teksten yderligere til venstre */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 40px; /* Øger højre margin for at skubbe teksten væk fra billedet */
+}
+
+.textprojekt-section3 h2 {
+    font-size: 35px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.textprojekt-section3 p {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Styling for billedsektionen */
+.imageprojekt-section3 {
+    flex: 0.5;
+    padding: 10px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for billedet */
+.imageprojekt-section3 img {
+    max-width: 70%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Responsiv styling for mobile enheder */
+@media (max-width: 600px) {
+    .projekter-section3 {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .textprojekt-section3,
+    .imageprojekt-section3 {
+        flex: 1 100%;
+        padding: 10px 0;
+    }
+
+    .textprojekt-section3 h2 {
+        font-size: 30px;
+    }
+
+    .textprojekt-section3 p {
+        font-size: 16px;
+    }
+
+    .imageprojekt-section3 img {
+        max-width: 100%;
+    }
+}
+
+
+
+/* "PROJEKTER4" Styling */
+.projekter-section4 {
+    width: 100%;
+    background-color: #ffffff;
+    color: #00224B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    height: auto;
+    margin-top: 50px;
+    flex-direction: row; /* Changed from row-reverse to row */
+}
+
+/* Styling for tekstsektionen */
+.textprojekt-section4 {
+    flex: 0.3;
+    padding: 10px 0 10px 20px; /* Adjusted padding for text to be on the left */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 0; /* Removed right margin as it is no longer necessary */
+    margin-left: 40px; /* Added left margin to separate text from the image */
+}
+
+/* Styling for billedsektionen */
+.imageprojekt-section4 {
+    flex: 0.5;
+    padding: 10px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for billedet */
+.imageprojekt-section4 img {
+    max-width: 70%;
+    height: auto;
+    margin-left: auto; /* Keeps the image centered within its container */
+    margin-right: auto;
+}
+
+/* Responsiv styling for mobile enheder */
+@media (max-width: 600px) {
+    .projekter-section4 {
+        flex-direction: column; /* Keeps the mobile layout unchanged */
+    }
+
+    .textprojekt-section4,
+    .imageprojekt-section4 {
+        flex: 1 100%;
+        padding: 10px 0;
+    }
+
+    .textprojekt-section4 h2 {
+        font-size: 30px;
+    }
+
+    .textprojekt-section4 p {
+        font-size: 16px;
+    }
+
+    .imageprojekt-section4 img {
+        max-width: 100%;
+    }
+}
+
+
+
+/* "PROJEKTER5" Styling */
+.projekter-section5 {
+    width: 100%;
+    background-color: #ffffff;
+    color: #00224B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    height: auto;
+    margin-top: 50px;
+    flex-direction: row-reverse;
+}
+
+/* Styling for tekstsektionen */
+.textprojekt-section5 {
+    flex: 0.3;
+    padding: 10px 20px 10px 0; /* Øger padding til højre for at skubbe teksten yderligere til venstre */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 40px; /* Øger højre margin for at skubbe teksten væk fra billedet */
+}
+
+.textprojekt-section5 h2 {
+    font-size: 35px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.textprojekt-section5 p {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Styling for billedsektionen */
+.imageprojekt-section5 {
+    flex: 0.5;
+    padding: 10px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for billedet */
+.imageprojekt-section5 img {
+    max-width: 70%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Responsiv styling for mobile enheder */
+@media (max-width: 600px) {
+    .projekter-section5 {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .textprojekt-section5,
+    .imageprojekt-section5 {
+        flex: 1 100%;
+        padding: 10px 0;
+    }
+
+    .textprojekt-sectio5 h2 {
+        font-size: 30px;
+    }
+
+    .textprojekt-section5 p {
+        font-size: 16px;
+    }
+
+    .imageprojekt-section5 img {
+        max-width: 100%;
+    }
+}
+
+/* "PROJEKTER6" Styling */
+.projekter-section6 {
+    width: 100%;
+    background-color: #ffffff;
+    color: #00224B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    height: auto;
+    margin-top: 50px;
+    flex-direction: row; /* Changed from row-reverse to row */
+}
+
+/* Styling for tekstsektionen */
+.textprojekt-section6 {
+    flex: 0.3;
+    padding: 10px 0 10px 20px; /* Adjusted padding for text to be on the left */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 0; /* Removed right margin as it is no longer necessary */
+    margin-left: 40px; /* Added left margin to separate text from the image */
+}
+
+/* Styling for billedsektionen */
+.imageprojekt-section6 {
+    flex: 0.5;
+    padding: 10px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for billedet */
+.imageprojekt-section6 img {
+    max-width: 70%;
+    height: auto;
+    margin-left: auto; /* Keeps the image centered within its container */
+    margin-right: auto;
+}
+
+/* Responsiv styling for mobile enheder */
+@media (max-width: 600px) {
+    .projekter-section6 {
+        flex-direction: column; /* Keeps the mobile layout unchanged */
+    }
+
+    .textprojekt-section6,
+    .imageprojekt-section6 {
+        flex: 1 100%;
+        padding: 10px 0;
+    }
+
+    .textprojekt-section6 h2 {
+        font-size: 30px;
+    }
+
+    .textprojekt-section6 p {
+        font-size: 16px;
+    }
+
+    .imageprojekt-section6 img {
+        max-width: 100%;
+    }
+}
+
+
