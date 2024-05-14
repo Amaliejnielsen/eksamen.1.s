@@ -1201,3 +1201,160 @@ font-size: 30px;
         margin: 0 auto; /* Centrerer elementerne */
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* "KONTAKT SIDEN" Styling */
+.kontakt-sektion {
+    width: 100%;
+    background-color: #ffffff;
+    color: #00224B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    height: auto;
+    margin-top: 10px;
+    flex-direction: row; /* Ændret fra row-reverse til row */
+}
+
+/* Styling for tekstsektionen */
+.kontakttext-section {
+    flex: 0.3;
+    padding: 10px 20px 10px 0; /* Øger padding til højre for at skubbe teksten yderligere til venstre */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 40px; /* Øger højre margin for at skubbe teksten væk fra billedet */
+}
+
+.kontakttext-section p {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: left;
+    line-height: 1.6;
+}
+
+/* Styling for billedsektionen */
+.kontaktimage-section {
+    flex: 0.5;
+    padding: 10px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for billedet */
+.kontaktimage-section img {
+    max-width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Responsiv styling for mobile enheder */
+@media (max-width: 600px) {
+    .kontakt-sektion {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .kontakttext-section,
+    .kontaktimage-section {
+        flex: 1 100%;
+        padding: 10px 0;
+        display: flex;
+        justify-content: center; /* Tilføjet for at centrere billedet horisontalt */
+        align-items: center; /* Tilføjet for at centrere billedet vertikalt */
+    }
+
+    .kontakttext-section h2 {
+        font-size: 30px;
+    }
+
+    .kontakttext-section p {
+        font-size: 16px;
+    }
+
+    .kontaktimage-section img {
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+
+/* "IKON KONTAKT" styling */
+.kontakt-section {
+    text-align: left; /* Justerer teksten til venstre */
+    max-width: 600px;
+    margin: 0 0 0 50px; /* Justerer venstremargin for at flytte sektionen mere til højre */
+    padding: 20px;
+}
+
+.kontakt-item {
+    display: flex;
+    align-items: center;
+    color: #00224B;
+    font-weight: bold;
+    justify-content: flex-start; /* Sikrer, at items starter fra samme punkt til venstre */
+    margin: 10px 0;
+    padding-left: 90px; /* Tilføjer venstre padding for at rykke hele elementet til højre */
+}
+
+.kontakt-item img {
+    width: 50px; /* Størrelse på ikonet */
+    height: 50px;
+    margin-right: 20px; /* Øger afstand mellem ikon og tekst */
+    flex-shrink: 0; /* Forhindrer ikonet i at skrumpe */
+    padding-left: 0; /* Fjerner venstre padding */
+}
+
+.kontakt-item span {
+    text-align: left; /* Teksten justeres til venstre */
+    display: block; /* Gør span til en block for at fylde tilgængelig plads */
+    width: 100%; /* Fylder resten af pladsen i flex container */
+    font-size: 18px;
+}
+
+/* Media Queries for mindre skærme som smartphones */
+@media (max-width: 768px) {
+    .kontakt-section {
+        padding: 10px;
+        margin: 0; /* Fjerner margin for at centrere sektionen på mindre skærme */
+    }
+
+    .kontakt-item {
+        flex-direction: column; /* Elementerne stables vertikalt */
+        padding-left: 0; /* Fjerner venstre padding */
+        align-items: center; /* Centrerer items */
+    }
+
+    .kontakt-item img {
+        margin-bottom: 5px; /* Afstand mellem ikon og tekst */
+        padding-left: 0; /* Fjerner venstre padding */
+    }
+
+    .kontakt-item span {
+        text-align: center; /* Centrerer tekst */
+    }
+}
