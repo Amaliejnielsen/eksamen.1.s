@@ -16,13 +16,12 @@
     </header>
 
     <header>
-
         <nav>
             <ul class="navmenu">  <!-- Navigation -->
-                <li><a href="#">Forside</a></li>
-                <li><a href="#">Projekter</a></li>
-                <li><a href="#">Om mig</a></li>
-                <li><a href="#">Kontakt</a></li>
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="projekter.html">Projekter</a></li>
+                <li><a href="ommig.html">Om mig</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
             </ul>
         </nav>
     </header>
@@ -67,30 +66,22 @@
     </div>
 
 
-    <div class="kontaktformular">
-        <h2>Kontakt mig</h2>
+        <div class="kontaktformular">
+            <h2>Du kan også  kontakt mig på denne kontaktformular</h2>
+            <form class="contact-form" action="kontakt.html" method="post">
+                <label for="name">Navn*</label>
+                <input type="text" id="name" class="contact-form-text">
+        
+                <label for="email">E-mail*</label>
+                <input type="email" id="email" class="contact-form-text">
+        
+                <label for="message">Besked*</label>
+                <input type="message" id="email" class="contact-form-text">
 
-        <form class="contact-form" action="kontakt.html" method="post">
-            <input type="tetx" class="contact-form-text" placeholder="Dit navn">
-            <input type="tetx" class="contact-form-text" placeholder="Din mail">
-            <textrea class="contact-form-text" placeholder="Din besked"></textrea>
-
-
-        </form>
-
-    </div>
-
-
-
-  
-
-   
-
-
-
-   
-
-
+        
+                <input type="submit" class="contact-form-btn" value="Send">
+            </form>
+        </div>
 
     <footer class="footer">
         <div class="footer-content">

@@ -1401,6 +1401,81 @@ font-size: 30px;
 
 
 
+/* KONTAKT FORMULAR */
+.kontaktformular {
+    background-color: #ffffff;
+    background-size: cover;
+    padding: 40px 0;
+}
+
+.kontaktformular h2 {
+    text-align: center;
+    color: #00224B;
+    font-size: 20px;
+}
+
+.border {
+    width: 100px;
+    height: 10px;
+    background: #00224B;
+    margin: 40px auto;
+}
+
+.contact-form {
+    max-width: 800px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+.contact-form label {
+    display: block;
+    margin: 16px 0 8px 0; /* Tilføj margin for at skabe plads mellem label og input */
+    color: #00224B;
+    font-weight: bold;
+}
+
+.contact-form-text {
+    display: block;
+    font-family: "playful display";
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 0 16px 0; /* Fjern margin-top og tilføj margin-bottom */
+    border: 0;
+    background: rgb(197, 197, 197);
+    padding: 20px;
+    outline: none;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.contact-form-text:focus {
+    box-shadow: none;
+    background: #00224B;
+}
+
+.contact-form-btn {
+    float: right;
+    border: 0;
+    background-color: #00224B;
+    color: #ffffff;
+    padding: 12px 50px; /* Størrelse på SEND knappen */
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.contact-form-btn:hover {
+    background: #A5AAD8;
+}
+
+
+
+
+
+
+
+
 
 
 
