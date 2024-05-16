@@ -1422,7 +1422,7 @@ font-size: 30px;
 }
 
 .contact-form {
-    max-width: 800px;
+    max-width: 900px;
     margin: auto;
     padding: 0 10px;
     overflow: hidden;
@@ -1461,6 +1461,7 @@ font-size: 30px;
     background-color: #00224B;
     color: #ffffff;
     padding: 12px 50px; /* Størrelse på SEND knappen */
+    border-radius: 20px;
     cursor: pointer;
     transition: 0.5s;
 }
