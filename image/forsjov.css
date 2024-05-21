@@ -6,38 +6,135 @@
 }
 
 body{
-    background: #ff88dd;
+    background: #ffffff;
     min-height: 100vh;
     display:flex;
     align-items: center;
     justify-content: center;
 }
 
-.contact-info{
+/* Container for gitteret */
+.projekter-section1 {
     display: flex;
-    width: 100%;
-    max-width: 1200px;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 0 20px;
+    width: 100%;
 }
 
-.card{
-    background: #026475;
-    padding: 0 20px;
-    margin: 0 10px;
-    width: calc(33% - 20px);
-    height: 200px;
+.image-container {
+    position: relative;
+    width: 300px; /* Juster bredde efter behov */
+    height: 200px; /* Juster højde efter behov */
+}
+
+.original-image,
+.hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease;
+}
+
+.hover-image {
+    opacity: 0;
+}
+
+.image-container:hover .hover-image {
+    opacity: 1;
+}
+
+.image-container:hover .original-image {
+    opacity: 0;
+}
+
+
+
+/* "PROJEKTER4" Styling */
+.projekter-section4 {
+    width: 100%;
+    background-color: #EBDED4;
+    color: #00224B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    height: auto;
+    margin-top: 50px;
+    flex-direction: row; /* Changed from row-reverse to row */
+}
+
+/* Styling for tekstsektionen */
+.textprojekt-section4 {
+    flex: 0.3;
+    padding: 10px 20px 10px 0px; /* Adjusted padding for text to be on the left */
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-right: 0; /* Removed right margin as it is no longer necessary */
+    margin-left: 40px; /* Added left margin to separate text from the image */
+}
+
+.textprojekt-section4 h2 {
+    font-size: 35px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.textprojekt-section4 p {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Styling for billedsektionen */
+.imageprojekt-section4 {
+    flex: 0.4;
+    padding: 10px 5px;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    color: azure;
 }
 
-.card.icon{
-    font-size: 28px;
-    background: #ff88dd;
-
+/* Styling for animationen */
+.sprite2 {
+    width: 500px; /* Juster bredde efter behov */
+    height: 500px; /* Juster højde efter behov */
+    background: url(billedemappe/kafffe.png) 0 0 no-repeat;
+    animation: play 2s steps(8) infinite;
 }
 
+@keyframes play {
+    0% { background-position: 0px; }
+    100% { background-position: -4000px; } /* Juster baggrundspositionen efter billedets bredde */
+}
+
+/* Responsiv styling for mobile enheder */
+@media (max-width: 600px) {
+    .projekter-section4 {
+        flex-direction: column; /* Keeps the mobile layout unchanged */
+    }
+
+    .textprojekt-section4,
+    .imageprojekt-section4 {
+        flex: 1 100%;
+        padding: 10px 0;
+    }
+
+    .textprojekt-section4 h2 {
+        font-size: 30px;
+    }
+
+    .textprojekt-section4 p {
+        font-size: 16px;
+    }
+
+    .sprite2 {
+        width: 100%; /* Juster bredde for mobil */
+        height: auto; /* Juster højde for mobil */
+    }
+}

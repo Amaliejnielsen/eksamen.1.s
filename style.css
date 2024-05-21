@@ -735,18 +735,18 @@ nav ul li a:hover {
     box-sizing: border-box;
     height: auto;
     margin-top: 50px;
-    flex-direction: row; /* Changed from row-reverse to row */
+    flex-direction: row;
 }
 
 /* Styling for tekstsektionen */
 .textprojekt-section4 {
     flex: 0.3;
-    padding: 10px 20px 10px 0px; /* Adjusted padding for text to be on the left */
+    padding: 10px 20px 10px 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-right: 0; /* Removed right margin as it is no longer necessary */
-    margin-left: 40px; /* Added left margin to separate text from the image */
+    margin-right: 0;
+    margin-left: 40px;
 }
 
 .textprojekt-section4 h2 {
@@ -772,18 +772,18 @@ nav ul li a:hover {
     align-items: center;
 }
 
-/* Styling for billedet */
-.imageprojekt-section4 img {
-    max-width: 70%;
+/* Styling for videoen */
+.imageprojekt-section4 video {
+    max-width: 80%;
     height: auto;
-    margin-left: auto; /* Keeps the image centered within its container */
+    margin-left: auto;
     margin-right: auto;
 }
 
 /* Responsiv styling for mobile enheder */
 @media (max-width: 600px) {
     .projekter-section4 {
-        flex-direction: column; /* Keeps the mobile layout unchanged */
+        flex-direction: column;
     }
 
     .textprojekt-section4,
@@ -800,10 +800,11 @@ nav ul li a:hover {
         font-size: 16px;
     }
 
-    .imageprojekt-section4 img {
+    .imageprojekt-section4 video {
         max-width: 100%;
     }
 }
+
 
 
 
@@ -1451,17 +1452,17 @@ font-size: 30px;
 }
 
 .contact-form-text:focus {
-    box-shadow: none;
     background: #00224B;
 }
 
 .contact-form-btn {
     float: right;
     border: 0;
+    font-family: "playfair display";
     background-color: #00224B;
     color: #ffffff;
-    padding: 12px 50px; /* Størrelse på SEND knappen */
-    border-radius: 20px;
+    font-size: 16px;
+    padding: 12px 40px; /* Størrelse på SEND knappen */
     cursor: pointer;
     transition: 0.5s;
 }
