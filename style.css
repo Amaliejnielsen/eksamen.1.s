@@ -73,7 +73,7 @@ nav ul li a:hover {
 
 
 
-  /*forside billede og tilhørende tekst ved mobil*/
+/* Forside billede og tilhørende tekst */
 .intro-box {
     position: relative;
 }
@@ -87,11 +87,38 @@ nav ul li a:hover {
     display: none; /* Skjuler dette billede på mobil */
 }
 
-.intro, .titel, .titel2, .underskrift, .logo-navn {
+.intro, .titel, .titel2, .titel3, .underskrift, .logo-navn {
     color: #00224B; /* Sørger for alle tekster bruger samme farve */
 }
 
-/*forside billede og tilhørende tekst ved større skærm end mobil*/
+/* Forside billede og tilhørende tekst ved mobil */
+@media screen and (max-width: 599px) {
+    .intro {
+        position: static;
+        text-align: center; /* Centrerer teksten under billedet */
+        padding: 20px;
+    }
+
+    .titel {
+        font-size: 28px; /* Mindre tekststørrelse på mobil */
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .titel2 {
+        font-size: 22px; /* Mindre tekststørrelse på mobil */
+        font-weight: normal;
+        margin-bottom: 10px; /* Øger margin for lidt mere afstand */
+    }
+
+    .titel3 {
+        font-size: 20px; /* Mindre tekststørrelse på mobil */
+        font-weight: normal;
+        margin-top: 5px; /* Øger margin for lidt mere afstand */
+    }
+}
+
+/* Forside billede og tilhørende tekst ved større skærm end mobil */
 @media screen and (min-width: 600px) {
     #mig-forside {
         display: none; /* Skjuler dette billede på skærme bredere end 600px */
@@ -106,18 +133,21 @@ nav ul li a:hover {
         position: absolute;
         top: 30%;
         left: 5%;
+        text-align: left; /* Tekst justeret til venstre for større skærme */
     }
 
     .titel {
-        font-size: 30px;
+        font-size: 30px; /* Større tekststørrelse på større skærme */
     }
 
     .titel2 {
-        font-size: 25px;
+        font-size: 25px; /* Større tekststørrelse på større skærme */
+        font-weight: normal;
     }
 
     .titel3 {
-        font-size: 20px;
+        font-size: 25px; /* Større tekststørrelse på større skærme */
+        font-weight: normal;
     }
 }
 
@@ -128,20 +158,23 @@ nav ul li a:hover {
     }
 
     .titel {
-        font-size: 35px;
-        margin-top: 10px;
+        font-size: 40px; /* Endnu større tekststørrelse på meget store skærme */
+        margin-bottom: 5px;
     }
 
     .titel2 {
-        font-size: 25px;
-        margin-bottom: 10px;
+        font-size: 30px; /* Endnu større tekststørrelse på meget store skærme */
+        margin-top: 5px;
+        margin-bottom: 15px;
     }
 
     .titel3 {
-        font-size: 25px;
-        margin-top: 20px;
+        font-size: 25px; /* Endnu større tekststørrelse på meget store skærme */
+        margin-top: 5px;
+        
     }
 }
+
 
 
 
@@ -323,6 +356,11 @@ nav ul li a:hover {
     font-size: 35px;
 }
 
+.contact-section h3 {
+    color: #00224B;
+    font-size: 20px;
+}
+
 .contact-section p {
     color: #00224B;
     font-size: 19px;
@@ -371,10 +409,10 @@ nav ul li a:hover {
         flex-direction: column; /* Elementerne stables vertikalt */
         padding-left: 0; /* Fjerner venstre padding */
         align-items: center; /* Centrerer items */
+        margin-top: 30px; /* Tilføjer topmargin for at skabe afstand mellem kontaktsektion og første billedeikon */
     }
 
     .contact-item img {
-        margin-bottom: 5px; /* Afstand mellem ikon og tekst */
         padding-left: 0; /* Fjerner venstre padding */
     }
 
@@ -382,6 +420,7 @@ nav ul li a:hover {
         text-align: center; /* Centrerer tekst */
     }
 }
+
 
 
 
@@ -1128,14 +1167,13 @@ font-size: 30px;
 
 
 /* "HVAD KAN JEG TILBYDE?" styling */
-
 .linje {
     display: flex;
     justify-content: space-between; /* Ændrer til space-between for større vandret afstand */
     align-items: flex-start;
     flex-wrap: wrap;
-    margin-bottom: 40px; /* Øger bundmarginen for mere vertikal afstand */
-    gap: 60px; /* Tilføjer en vandret afstand på 80px mellem elementerne */
+    margin-bottom: 20px; /* Øger bundmarginen til 120px for mere vertikal afstand */
+    gap: 70px; /* Tilføjer en vandret afstand på 40px mellem elementerne */
 }
 
 .image-tilbyde {
@@ -1143,6 +1181,9 @@ font-size: 30px;
     width: 20%; /* Beholder samme bredde */
     padding: 20px; /* Beholder samme padding */
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .image-tilbyde img {
@@ -1150,6 +1191,7 @@ font-size: 30px;
     height: auto;
     display: block;
     object-fit: cover;
+    margin: 0 auto; /* Centrerer billedet */
 }
 
 .tekst-box {
@@ -1166,7 +1208,7 @@ font-size: 30px;
 .ny-tekst-sektion {
     text-align: left;
     margin: 30px auto; /* Øger margin for at skabe mere afstand mellem sektioner */
-    max-width: 90%; /* Øger maksimal bredde for tekstboksen */
+    max-width: 100%;
     font-size: 18px;
     color: #00224B;
     line-height: 1.6;
@@ -1218,6 +1260,9 @@ font-size: 30px;
 
 
 
+
+
+
 /* "KONTAKT SIDEN" Styling */
 .kontakt-sektion {
     width: 100%;
@@ -1230,31 +1275,31 @@ font-size: 30px;
     box-sizing: border-box;
     height: auto;
     margin-top: 10px;
-    flex-direction: row;
+    flex-direction: row; /* Beholder row for at placere billedet til venstre */
 }
 
 /* Styling for tekstsektionen */
 .kontakttext-section {
-    flex: 0.3;
-    padding: 10px 20px 10px 0;
+    flex: 0.4; /* Samme størrelse som ommigtext-section */
+    padding: 20px; /* Ensartet padding for bedre centrering */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-right: 40px;
+    align-items: flex-start; /* Justerer teksten til venstre */
+    text-align: left; /* Justerer tekst til venstre */
+    margin-right: 40px; /* Tilføjer margin til højre for at skabe mere afstand */
 }
 
 .kontakttext-section p {
-    font-size: 18px;
-    margin-top: 0;
-    margin-bottom: 20px;
-    text-align: left;
+    font-size: 18px; /* Samme skriftstørrelse som ommigtext-section */
+    margin: 0 0 20px 0; /* Ensartet margin */
     line-height: 1.6;
 }
 
 /* Styling for billedsektionen */
 .kontaktimage-section {
-    flex: 0.5;
-    padding: 10px 5px;
+    flex: 0.5; /* Samme størrelse som ommigimage-section */
+    padding: 20px; /* Ensartet padding for bedre centrering */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1262,11 +1307,36 @@ font-size: 30px;
 
 /* Styling for billedet */
 .kontaktimage-section img {
-    max-width: 80%;
+    max-width: 90%; /* Samme bredde som ommigimage-section */
     height: auto;
-    margin-left: auto;
-    margin-right: auto;
 }
+
+/* Responsiv styling for mobile enheder */
+@media (max-width: 600px) {
+    .kontakt-sektion {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .kontakttext-section,
+    .kontaktimage-section {
+        flex: 1 100%;
+        padding: 10px 0;
+    }
+
+    .kontakttext-section h2 {
+        font-size: 30px;
+    }
+
+    .kontakttext-section p {
+        font-size: 16px;
+    }
+
+    .kontaktimage-section img {
+        max-width: 100%;
+    }
+}
+
 
 
 
@@ -1275,7 +1345,7 @@ font-size: 30px;
 .social-media-section {
     text-align: center; /* Center text */
     margin: -40px 0 0 0; /* Justere teksten til under billede */
-    padding-left: 460px; /* Juster venstrepadding for at flytte sektionen til højre */
+    padding-left: 610px; /* Juster venstrepadding for at flytte sektionen til højre */
 }
 
 .social-media-section h3 {
@@ -1344,8 +1414,9 @@ font-size: 30px;
 .kontakt-section {
     text-align: left;
     max-width: 600px;
-    margin: -130px 0 0 50px;
+    margin: -120px 0 0 0px;
     padding: 20px;
+    margin-bottom: 60px;
 }
 
 .kontakt-item {
@@ -1413,7 +1484,7 @@ font-size: 30px;
     text-align: left;
     color: #00224B;
     font-size: 20px;
-    margin-left: 129px;
+    margin-left: 134px;
     margin-bottom: 30px;
 }
 
@@ -1435,13 +1506,14 @@ font-size: 30px;
     display: block;
     margin: 16px 0 8px 0; /* Tilføj margin for at skabe plads mellem label og input */
     color: #00224B;
-    font-weight: bold;
+    font-size: 18px;
+    font-weight: normal;
 }
 
 .contact-form-text {
     display: block;
     font-family: "playful display";
-    font-size: 16px;
+    font-size: 18px;
     width: 100%;
     box-sizing: border-box;
     margin: 0 0 16px 0; /* Fjern margin-top og tilføj margin-bottom */
