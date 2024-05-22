@@ -364,7 +364,7 @@ nav ul li a:hover {
 .contact-section p {
     color: #00224B;
     font-size: 19px;
-    padding-left: 10px; /* Øger venstre padding for at skubbe teksten mere til højre */
+    padding-left: 5px; /* Reducerer venstre padding for at skubbe teksten til venstre */
 }
 
 .contact-item {
@@ -372,7 +372,7 @@ nav ul li a:hover {
     align-items: center;
     justify-content: flex-start; /* Sikrer, at items starter fra samme punkt til venstre */
     margin: 10px 0;
-    padding-left: 140px; /* Tilføjer venstre padding for at skubbe hele elementet til højre */
+    padding-left: 150px; /* Reducerer venstre padding for at skubbe hele elementet til venstre */
 }
 
 .contact-item img {
@@ -380,7 +380,7 @@ nav ul li a:hover {
     height: 50px;
     margin-right: 10px; /* Afstand mellem ikon og tekst */
     flex-shrink: 0; /* Forhindrer ikonet i at skrumpe */
-    padding-left: 40px;
+    padding-left: 20px; /* Reducerer venstre padding for at skubbe ikonet til venstre */
 }
 
 .contact-item span {
@@ -420,6 +420,7 @@ nav ul li a:hover {
         text-align: center; /* Centrerer tekst */
     }
 }
+
 
 
 
