@@ -1033,31 +1033,31 @@ nav ul li a:hover {
     box-sizing: border-box;
     height: auto;
     margin-top: 10px;
-    flex-direction: row-reverse;
+    flex-direction: row-reverse; /* Beholder row-reverse for at placere billedet til højre */
 }
 
 /* Styling for tekstsektionen */
 .ommigtext-section {
-    flex: 0.3;
-    padding: 10px 20px 10px 0; /* Øger padding til højre for at skubbe teksten yderligere til venstre */
+    flex: 0.4; /* Reducerer størrelsen en smule fra tidligere */
+    padding: 20px; /* Ensartet padding for bedre centrering */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-right: 40px; /* Øger højre margin for at skubbe teksten væk fra billedet */
+    align-items: flex-start; /* Justerer teksten til venstre */
+    text-align: left; /* Justerer tekst til venstre */
+    margin-right: 40px; /* Tilføjer margin til højre for at skabe mere afstand */
 }
 
 .ommigtext-section p {
-    font-size: 18px;
-    margin-top: 0;
-    margin-bottom: 20px;
-    text-align: left;
+    font-size: 18px; /* Øger skriftstørrelsen lidt mere */
+    margin: 0 0 20px 0; /* Ensartet margin */
     line-height: 1.6;
 }
 
 /* Styling for billedsektionen */
 .ommigimage-section {
-    flex: 0.5;
-    padding: 10px 5px;
+    flex: 0.5; /* Øger størrelsen en smule fra tidligere */
+    padding: 20px; /* Ensartet padding for bedre centrering */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1065,10 +1065,8 @@ nav ul li a:hover {
 
 /* Styling for billedet */
 .ommigimage-section img {
-    max-width: 90%;
+    max-width: 90%; /* Øger bredden på billedet en smule */
     height: auto;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 /* Responsiv styling for mobile enheder */
@@ -1096,6 +1094,8 @@ nav ul li a:hover {
         max-width: 100%;
     }
 }
+
+
 
 
 
@@ -1134,8 +1134,8 @@ font-size: 30px;
     justify-content: space-between; /* Ændrer til space-between for større vandret afstand */
     align-items: flex-start;
     flex-wrap: wrap;
-    margin-bottom: 20px; /* Øger bundmarginen til 120px for mere vertikal afstand */
-    gap: 40px; /* Tilføjer en vandret afstand på 40px mellem elementerne */
+    margin-bottom: 40px; /* Øger bundmarginen for mere vertikal afstand */
+    gap: 60px; /* Tilføjer en vandret afstand på 80px mellem elementerne */
 }
 
 .image-tilbyde {
@@ -1166,7 +1166,7 @@ font-size: 30px;
 .ny-tekst-sektion {
     text-align: left;
     margin: 30px auto; /* Øger margin for at skabe mere afstand mellem sektioner */
-    max-width: 80%;
+    max-width: 90%; /* Øger maksimal bredde for tekstboksen */
     font-size: 18px;
     color: #00224B;
     line-height: 1.6;
@@ -1192,7 +1192,6 @@ font-size: 30px;
     .tekst-box {
         font-size: 20px; /* Tilpasser skriftstørrelsen til små skærme */
         text-align: center; /* Sikrer at teksten er centreret */
-
     }
 }
 
@@ -1202,8 +1201,6 @@ font-size: 30px;
         margin: 0 auto; /* Centrerer elementerne */
     }
 }
-
-
 
 
 
@@ -1270,6 +1267,9 @@ font-size: 30px;
     margin-left: auto;
     margin-right: auto;
 }
+
+
+
 
 /* Styling for social media section */
 .social-media-section {
@@ -1410,9 +1410,11 @@ font-size: 30px;
 }
 
 .kontaktformular h2 {
-    text-align: center;
+    text-align: left;
     color: #00224B;
     font-size: 20px;
+    margin-left: 129px;
+    margin-bottom: 30px;
 }
 
 .border {
@@ -1423,7 +1425,7 @@ font-size: 30px;
 }
 
 .contact-form {
-    max-width: 900px;
+    max-width: 1200px;
     margin: auto;
     padding: 0 10px;
     overflow: hidden;
