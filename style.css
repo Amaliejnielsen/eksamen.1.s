@@ -248,7 +248,7 @@ nav ul li a:hover {
 }
 
     .textprojekter {
-    font-size: 30px; /* Reducerer skriftstørrelsen på mobile enheder */
+    font-size: 25px; /* Reducerer skriftstørrelsen på mobile enheder */
     }
 
 /* Ekstra styling for større desktops */
@@ -422,16 +422,6 @@ nav ul li a:hover {
 }
 
 
-
-
-
-
-
-
-
-
-
-
 .footer { /* Footer styling */
     background-color: #EBDED4; /* Baggrundsfarven på din footer */
     padding: 5px 0;
@@ -482,7 +472,7 @@ nav ul li a:hover {
 
 
 
-/* "PROJEKTER1" Styling */
+/* "PROJEKTER SIDEN" Styling */
 
 .page-header {
     width: 100%;
@@ -501,7 +491,7 @@ nav ul li a:hover {
 
 @media (max-width: 600px) {
     .page-header h1 {
-        font-size: 28px; /* Mindre skriftstørrelse på små skærme */
+        font-size: 35px; /* Mindre skriftstørrelse på små skærme */
     }
 
     .page-header {
@@ -579,8 +569,8 @@ nav ul li a:hover {
         padding: 10px 0;
     }
 
-    .textprojekt-sectio1 h2 {
-        font-size: 30px;
+    .textprojekt-section1 h2 {
+        font-size: 28px;
     }
 
     .textprojekt-section1 p {
@@ -607,18 +597,17 @@ nav ul li a:hover {
     box-sizing: border-box;
     height: auto;
     margin-top: 50px;
-    flex-direction: row; /* Changed from row-reverse to row */
+    flex-direction: row; /* Beholder row for at placere billedet til højre */
 }
 
 /* Styling for tekstsektionen */
 .textprojekt-section2 {
     flex: 0.3;
-    padding: 10px 20px 10px 0px; /* Adjusted padding for text to be on the left */
+    padding: 10px 20px 10px 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-right: 0; /* Removed right margin as it is no longer necessary */
-    margin-left: 40px; /* Added left margin to separate text from the image */
+    margin-left: 40px; /* Tilføjet venstre margin for at skabe afstand til billedet */
 }
 
 .textprojekt-section2 h2 {
@@ -637,7 +626,7 @@ nav ul li a:hover {
 
 /* Styling for billedsektionen */
 .imageprojekt-section2 {
-    flex: 0.4;
+    flex: 0.45;
     padding: 10px 5px;
     display: flex;
     justify-content: center;
@@ -648,14 +637,15 @@ nav ul li a:hover {
 .imageprojekt-section2 img {
     max-width: 70%;
     height: auto;
-    margin-left: auto; /* Keeps the image centered within its container */
+    margin-left: auto;
     margin-right: auto;
 }
 
 /* Responsiv styling for mobile enheder */
 @media (max-width: 600px) {
     .projekter-section2 {
-        flex-direction: column; /* Keeps the mobile layout unchanged */
+        flex-direction: column;
+        padding: 20px;
     }
 
     .textprojekt-section2,
@@ -664,8 +654,12 @@ nav ul li a:hover {
         padding: 10px 0;
     }
 
+    .textprojekt-section2 {
+        margin-left: 0; /* Fjerner venstre margin for mobilvisning */
+    }
+
     .textprojekt-section2 h2 {
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .textprojekt-section2 p {
@@ -676,6 +670,7 @@ nav ul li a:hover {
         max-width: 100%;
     }
 }
+
 
 
 
@@ -749,7 +744,7 @@ nav ul li a:hover {
     }
 
     .textprojekt-section3 h2 {
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .textprojekt-section3 p {
@@ -775,7 +770,7 @@ nav ul li a:hover {
     box-sizing: border-box;
     height: auto;
     margin-top: 50px;
-    flex-direction: row;
+    flex-direction: row; /* Beholder row for at placere billedet til højre */
 }
 
 /* Styling for tekstsektionen */
@@ -785,8 +780,7 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-right: 0;
-    margin-left: 40px;
+    margin-left: 40px; /* Tilføjet venstre margin for at skabe afstand til billedet */
 }
 
 .textprojekt-section4 h2 {
@@ -805,7 +799,7 @@ nav ul li a:hover {
 
 /* Styling for billedsektionen */
 .imageprojekt-section4 {
-    flex: 0.4;
+    flex: 0.45;
     padding: 10px 5px;
     display: flex;
     justify-content: center;
@@ -814,7 +808,7 @@ nav ul li a:hover {
 
 /* Styling for videoen */
 .imageprojekt-section4 video {
-    max-width: 80%;
+    max-width: 70%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
@@ -824,6 +818,7 @@ nav ul li a:hover {
 @media (max-width: 600px) {
     .projekter-section4 {
         flex-direction: column;
+        padding: 20px;
     }
 
     .textprojekt-section4,
@@ -832,8 +827,12 @@ nav ul li a:hover {
         padding: 10px 0;
     }
 
+    .textprojekt-section4 {
+        margin-left: 0; /* Fjerner venstre margin for mobilvisning */
+    }
+
     .textprojekt-section4 h2 {
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .textprojekt-section4 p {
@@ -844,6 +843,7 @@ nav ul li a:hover {
         max-width: 100%;
     }
 }
+
 
 
 
@@ -890,7 +890,7 @@ nav ul li a:hover {
 
 /* Styling for billedsektionen */
 .imageprojekt-section5 {
-    flex: 0.5;
+    flex: 0.4;
     padding: 10px 5px;
     display: flex;
     justify-content: center;
@@ -919,7 +919,7 @@ nav ul li a:hover {
     }
 
     .textprojekt-section5 h2 {
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .textprojekt-section5 p {
@@ -943,18 +943,17 @@ nav ul li a:hover {
     box-sizing: border-box;
     height: auto;
     margin-top: 50px;
-    flex-direction: row; /* Changed from row-reverse to row */
+    flex-direction: row; /* Beholder row for at placere billedet til højre */
 }
 
 /* Styling for tekstsektionen */
 .textprojekt-section6 {
     flex: 0.3;
-    padding: 10px 20px 10px 0px; /* Adjusted padding for text to be on the left */
+    padding: 10px 20px 10px 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-right: 0; /* Removed right margin as it is no longer necessary */
-    margin-left: 40px; /* Added left margin to separate text from the image */
+    margin-left: 40px; /* Tilføjet venstre margin for at skabe afstand til billedet */
 }
 
 .textprojekt-section6 h2 {
@@ -973,7 +972,7 @@ nav ul li a:hover {
 
 /* Styling for billedsektionen */
 .imageprojekt-section6 {
-    flex: 0.4;
+    flex: 0.45;
     padding: 10px 5px;
     display: flex;
     justify-content: center;
@@ -984,14 +983,15 @@ nav ul li a:hover {
 .imageprojekt-section6 img {
     max-width: 70%;
     height: auto;
-    margin-left: auto; /* Keeps the image centered within its container */
+    margin-left: auto;
     margin-right: auto;
 }
 
 /* Responsiv styling for mobile enheder */
 @media (max-width: 600px) {
     .projekter-section6 {
-        flex-direction: column; /* Keeps the mobile layout unchanged */
+        flex-direction: column;
+        padding: 20px;
     }
 
     .textprojekt-section6,
@@ -1000,8 +1000,12 @@ nav ul li a:hover {
         padding: 10px 0;
     }
 
+    .textprojekt-section6 {
+        margin-left: 0; /* Fjerner venstre margin for mobilvisning */
+    }
+
     .textprojekt-section6 h2 {
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .textprojekt-section6 p {
@@ -1011,8 +1015,10 @@ nav ul li a:hover {
     .imageprojekt-section6 img {
         max-width: 100%;
     }
-
 }
+
+
+
 .footer { /* Footer styling */
     background-color: #EBDED4; /* Baggrundsfarven på din footer */
     padding: 5px 0;
@@ -1052,7 +1058,7 @@ nav ul li a:hover {
 
 @media (max-width: 600px) {
     .ommig-header h1 {
-        font-size: 28px; /* Mindre skriftstørrelse på små skærme */
+        font-size: 35px; /* Mindre skriftstørrelse på små skærme */
     }
 
     .ommig-header {
@@ -1158,7 +1164,7 @@ font-size: 30px;
 
 @media (max-width: 600px) {
     .tilbyde-header h2 {
-        font-size: 28px; /* Mindre skriftstørrelse på små skærme */
+        font-size: 30px; /* Mindre skriftstørrelse på små skærme */
     }
 
     .tilbyde-header {
@@ -1221,15 +1227,14 @@ font-size: 30px;
         flex-direction: column;
         align-items: center;
         justify-content: center; /* Tilføjer for at centrere vertikalt */
-        margin-bottom: 60px; /* Tilpasset afstand for mobile enheder */
-        gap: 20px; /* Tilføjer en vertikal afstand på 20px mellem elementerne */
+        margin-bottom: 5px; /* Reduceret afstand for mobile enheder */
+        gap: 5px; /* Reduceret vertikal afstand mellem elementerne */
     }
 
     .image-tilbyde {
         width: 80%; /* Gør billedcontainer bredere til hele skærmens bredde */
-        margin-bottom: 40px; /* Øger marginen mellem billederne og tekst yderligere */
+        margin-bottom: 1px; /* Mindre afstand mellem billede og tekst */
         text-align: center; /* Sikrer at billedet er centreret */
-        margin-left: 20px;
     }
 
     .tekst-box {
@@ -1241,8 +1246,7 @@ font-size: 30px;
 @media screen and (min-width: 1000px) {
     .image-tilbyde {
         max-width: 300px; /* Kontrollerer maksimal bredde på store skærme */
-        margin: 0 auto; /* Centrerer elementerne */
-    }
+        }
 }
 
 
@@ -1406,8 +1410,8 @@ font-size: 30px;
     }
 
     .social-media-ikon img {
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
     }
 }
 
@@ -1415,9 +1419,9 @@ font-size: 30px;
 .kontakt-section {
     text-align: left;
     max-width: 600px;
-    margin: -120px 0 0 0px;
+    margin: -120px 0 20px 0px; /* Juster margin-bottom for mindre afstand */
     padding: 20px;
-    margin-bottom: 60px;
+    margin-bottom: 20px; /* Reducer margin-bottom for mindre afstand */
 }
 
 .kontakt-item {
@@ -1445,22 +1449,28 @@ font-size: 30px;
     font-size: 20px; /* Øget font size */
 }
 
-
 /* Media Queries for mindre skærme som smartphones */
 @media (max-width: 768px) {
     .kontakt-section {
-        padding: 10px;
-        margin: 0;
+        padding: 20px; /* Øger padding for at skubbe sektionen længere ned */
+        margin-top: 10px; /* Juster margin-top for mindre afstand */
     }
 
     .kontakt-item {
-        flex-direction: column;
-        padding-left: 0;
-        align-items: center;
+        display: flex; /* Aktiverer flexbox */
+        flex-direction: column; /* Elementerne stables vertikalt */
+        padding-left: 0; /* Fjerner venstre padding */
+        align-items: center; /* Centrerer items */
+        margin-top: 10px; /* Juster topmargin for mindre afstand */
+        margin-left: 20px; /* Tilføjer margin-left for at skubbe elementet til højre */
+    }
+
+    .kontakt-item p {
+        text-align: center;
     }
 
     .kontakt-item img {
-        margin-bottom: 5px;
+        margin-bottom: 5px; /* Juster margin-bottom for mindre afstand */
         padding-left: 0;
     }
 
@@ -1472,55 +1482,58 @@ font-size: 30px;
 
 
 
-
-
 /* KONTAKT FORMULAR */
 .kontaktformular {
     background-color: #ffffff;
     background-size: cover;
-    padding: 40px 0;
+    padding: 40px 0 20px 0; /* Reducer padding-bottom for mindre afstand */
 }
 
 .kontaktformular h2 {
-    text-align: left;
+    text-align: left; /* Centrerer overskriften */
     color: #00224B;
-    font-size: 20px;
-    margin-left: 134px;
-    margin-bottom: 30px;
+    font-size: 24px; /* Øger font size for bedre læsbarhed */
+    margin: 0 auto 20px auto; /* Juster margin-bottom for mindre afstand */
+    padding-left: 110px; /* Tilføj padding-left for at rykke overskriften til højre */
+
 }
 
 .border {
     width: 100px;
     height: 10px;
     background: #00224B;
-    margin: 40px auto;
+    margin: 20px auto; /* Juster margin-top for mindre afstand */
 }
 
 .contact-form {
-    max-width: 1200px;
+    max-width: 1250px; /* Juster max-width for bedre visning på mobile enheder */
     margin: auto;
     padding: 0 10px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Flyt knappen til højre */
 }
 
 .contact-form label {
     display: block;
     margin: 16px 0 8px 0; /* Tilføj margin for at skabe plads mellem label og input */
     color: #00224B;
-    font-size: 18px;
+    font-size: 16px; /* Mindre font size for labels */
     font-weight: normal;
+    align-self: stretch; /* Sørg for at label fylder hele bredden */
 }
 
 .contact-form-text {
     display: block;
-    font-family: "playful display";
-    font-size: 18px;
+    font-family: "playfair display";
+    font-size: 16px; /* Mindre font size for input fields */
     width: 100%;
     box-sizing: border-box;
     margin: 0 0 16px 0; /* Fjern margin-top og tilføj margin-bottom */
     border: 0;
     background: rgb(197, 197, 197);
-    padding: 20px;
+    padding: 15px; /* Mindre padding for input fields */
     outline: none;
     color: #fff;
     transition: 0.5s;
@@ -1531,25 +1544,61 @@ font-size: 30px;
 }
 
 .contact-form-btn {
-    float: right;
+    display: block;
+    width: 10%; /* Gør knappen auto bredde */
     border: 0;
     font-family: "playfair display";
     background-color: #00224B;
     color: #ffffff;
     font-size: 16px;
-    padding: 12px 40px; /* Størrelse på SEND knappen */
+    padding: 15px 20px; /* Juster padding for knappen */
     cursor: pointer;
     transition: 0.5s;
+    margin-top: 10px; /* Tilføjer margin-top for at skabe plads over knappen */
+    align-self: flex-end; /* Sørg for at knappen er justeret til højre */
 }
 
 .contact-form-btn:hover {
     background: #A5AAD8;
 }
 
+/* Media Queries for mindre skærme */
+@media (max-width: 600px) {
+    .kontaktformular {
+        padding: 20px 0;
+    }
 
+    .kontaktformular h2 {
+        font-size: 18px; /* Mindre font size for overskriften på mobile enheder */
+        margin: 0 auto 5px auto; /* Justerer marginer */
+        text-align: left;
+        padding: 20px;
+    }
 
+    .contact-form {
+        padding: 0 20px;
+        align-items: flex-start; /* Juster knappen til venstre på mobile enheder */
+    }
 
+    .contact-form label {
+        font-size: 16px; /* Mindre font size for labels på mobile enheder */
+        align-self: stretch; /* Sørg for at label fylder hele bredden */
+    }
 
+    .contact-form-text {
+        font-size: 14px; /* Mindre font size for input fields på mobile enheder */
+        padding: 10px; /* Mindre padding for input fields på mobile enheder */
+    }
+
+    .contact-form-btn {
+        font-size: 15px; /* Mindre font size for knappen på mobile enheder */
+        padding: 10px 20px; /* Mindre padding for knappen på mobile enheder */
+        width: auto; /* Gør knappen auto bredde */
+        display: inline-block; /* Gør knappen inline-block for auto bredde */
+        text-align: center; /* Centrerer tekst i knappen */
+        float: right; /* Flyt knappen til højre */
+    }
+}
 
 
 
