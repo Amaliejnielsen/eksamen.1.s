@@ -146,13 +146,13 @@ nav ul li a:hover {
 
     .titel {
         font-size: 40px;
-        margin-bottom: 5px;
+        margin-bottom: 1px;
     }
 
     .titel2 {
         font-size: 30px; 
         margin-top: 5px;
-        margin-bottom: 15px;
+        margin-bottom: 25px;
     }
 
     .titel3 {
@@ -641,7 +641,7 @@ nav ul li a:hover {
 /* Styling for tekstsektionen */
 .textprojekt-section3 {
     flex: 0.3;
-    padding: 10px 150px 10px 0; /* Tilføjet padding til højre for at skubbe teksten yderligere til venstre */
+    padding: 10px 150px 10px 0; /* Tilføjet padding til højre for at skubbe teksten til venstre */
     display: flex;
     flex-direction: column;
     justify-content: center;
