@@ -641,11 +641,10 @@ nav ul li a:hover {
 /* Styling for tekstsektionen */
 .textprojekt-section3 {
     flex: 0.3;
-    padding: 10px 90px 10px 0; /* Tilføjet padding til højre for at skubbe teksten yderligere til venstre */
+    padding: 10px 150px 10px 0; /* Tilføjet padding til højre for at skubbe teksten yderligere til venstre */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-right: 0px; /* Tilføjer højre margin for at skubbe teksten væk fra billedet */
 }
 
 .textprojekt-section3 h2 {
@@ -1390,7 +1389,7 @@ nav ul li a:hover {
 .kontaktformular h2 {
     text-align: left; 
     color: #00224B;
-    font-size: 24px; 
+    font-size: 22px; 
     margin: 0 auto 20px auto; 
     padding-left: 110px; /* Tilføjer padding-left for at rykke overskriften mere til højre */
 }
@@ -1416,7 +1415,7 @@ nav ul li a:hover {
     display: block;
     margin: 16px 0 8px 0; /* Afstand imellem tekst og grålabel boks */
     color: #00224B;
-    font-size: 16px; 
+    font-size: 18px; 
     font-weight: normal;
     align-self: stretch; /* Sørger for at label fylder hele bredden */
 }
