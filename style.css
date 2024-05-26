@@ -435,7 +435,7 @@ nav ul li a:hover {
     text-align: center; 
     padding: 20px 0; /* Vertikal padding for afstand fra toppen og til første sektion */
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-size: 25px;
 }
 
@@ -466,7 +466,7 @@ nav ul li a:hover {
     padding: 50px 20px;
     box-sizing: border-box;
     height: auto;
-    margin-top: 10px;
+    margin-top: 20px;
     flex-direction: row-reverse;
 }
 
@@ -548,7 +548,7 @@ nav ul li a:hover {
     padding: 50px 20px;
     box-sizing: border-box;
     height: auto;
-    margin-top: 50px;
+    margin-top: 1px;
     flex-direction: row; /* Beholder row for at placere billedet til højre */
 }
 
@@ -634,18 +634,18 @@ nav ul li a:hover {
     padding: 50px 20px;
     box-sizing: border-box;
     height: auto;
-    margin-top: 50px;
+    margin-top: 10px;
     flex-direction: row-reverse;
 }
 
 /* Styling for tekstsektionen */
 .textprojekt-section3 {
     flex: 0.3;
-    padding: 10px 20px 10px 0; /* Tilføjet padding til højre for at skubbe teksten yderligere til venstre */
+    padding: 10px 90px 10px 0; /* Tilføjet padding til højre for at skubbe teksten yderligere til venstre */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-right: 40px; /* Tilføjer højre margin for at skubbe teksten væk fra billedet */
+    margin-right: 0px; /* Tilføjer højre margin for at skubbe teksten væk fra billedet */
 }
 
 .textprojekt-section3 h2 {
@@ -664,7 +664,7 @@ nav ul li a:hover {
 
 /* Styling for billedsektionen */
 .imageprojekt-section3 {
-    flex: 0.6;
+    flex: 0.7;
     padding: 10px 5px;
     display: flex;
     justify-content: center;
@@ -705,6 +705,10 @@ nav ul li a:hover {
     }
 }
 
+
+
+
+
 /* "PROJEKTER4" Styling */
 .projekter-section4 {
     width: 100%;
@@ -716,7 +720,7 @@ nav ul li a:hover {
     padding: 50px 20px;
     box-sizing: border-box;
     height: auto;
-    margin-top: 50px;
+    margin-top: 10px;
     flex-direction: row; /* Beholder row for at placere billedet til højre */
 }
 
@@ -746,7 +750,7 @@ nav ul li a:hover {
 
 /* Styling for billedsektionen */
 .imageprojekt-section4 {
-    flex: 0.45;
+    flex: 0.5;
     padding: 10px 5px;
     display: flex;
     justify-content: center;
@@ -802,7 +806,7 @@ nav ul li a:hover {
     padding: 50px 20px;
     box-sizing: border-box;
     height: auto;
-    margin-top: 50px;
+    margin-top: 10px;
     flex-direction: row-reverse;
 }
 
@@ -832,7 +836,7 @@ nav ul li a:hover {
 
 /* Styling for billedsektionen */
 .imageprojekt-section5 {
-    flex: 0.4;
+    flex: 0.5;
     padding: 10px 5px;
     display: flex;
     justify-content: center;
@@ -884,7 +888,7 @@ nav ul li a:hover {
     padding: 50px 20px;
     box-sizing: border-box;
     height: auto;
-    margin-top: 50px;
+    margin-top: 10px;
     flex-direction: row; /* Beholder row for at placere billedet til højre */
 }
 
@@ -914,7 +918,7 @@ nav ul li a:hover {
 
 /* Styling for billedsektionen */
 .imageprojekt-section6 {
-    flex: 0.45;
+    flex: 0.5;
     padding: 10px 5px;
     display: flex;
     justify-content: center;
@@ -958,6 +962,7 @@ nav ul li a:hover {
         max-width: 100%;
     }
 }
+
 
 .footer { /* Footer styling */
     background-color: #EBDED4; 
