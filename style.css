@@ -336,18 +336,6 @@ nav ul li a:hover {
     padding-left: 5px; 
 }
 
-.contact-section .contact-item p {
-    color: inherit; /* Beholder den oprindelige tekstfarve */
-    text-decoration: none; /* Fjerner link-styling */
-}
-
-.contact-section .contact-item p a {
-    color: inherit; /* Beholder den oprindelige tekstfarve */
-    text-decoration: none; /* Fjerner link-styling */
-    pointer-events: none; /* Fjerner klikbare link */
-}
-
-
 .contact-item {
     display: flex;
     align-items: center;
